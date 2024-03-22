@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--app-header-background);
+  color: #838383;
+  height: 80px;
+  padding: var(--app-padding);
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.menu ul li.active a {
+  color: #d9dadc;
+}
+
+@media (max-width: 500px) {
+  .menu ul {
+    flex-direction: column;
+    display: none;
+  }
+}
